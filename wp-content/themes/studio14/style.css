@@ -1,0 +1,312 @@
+/*
+Theme Name: Studio14
+Author: Ebose
+Author URI: https://wordpress.org/
+Description: This is a basic theme
+Requires at least: 5.3
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 1.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: studio14
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Brown';
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+/* Custom Class */
+.button {
+    padding: 10px 25px;
+    border-radius: 80px;
+    width: 171px;
+    height: 33px;
+    background-color: #EF6D1D;
+    font-family: 'Brown';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a.url-link {
+    color: #EF6D1D;
+    text-decoration: none;
+}
+
+.primary {
+    background-color: #EF6D1D;
+}
+
+.secondary {
+    background-color: #000000;
+}
+
+ul {
+    padding: 0;
+}
+
+
+/* Top Header */
+#top-header {
+    border-bottom: 1px solid #E5E5E5;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+#top-header .top-links ul li {
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 20px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+#top-header .top-links ul li.active {
+    text-decoration: underline;
+
+}
+
+/* Bottom Header */
+
+#bottom-header .navbar .navbar-nav .nav-item {
+    padding: 10px;
+
+}
+
+#bottom-header .navbar .navbar-nav li.nav-item a.nav-link {
+    font-family: 'Brown';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+}
+
+#bottom-header .logo {
+    width: 241.3px;
+    height: 66.43px;
+}
+
+button.navbar-toggler {
+    border: none;
+
+}
+
+button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+
+}
+
+
+/* Main section */
+
+#main {
+    margin: 5% 10%;
+}
+
+@media (min-width:1900px) {
+    #main {
+        margin: 5% 20%;
+    }
+}
+
+#main .section-title h2 {
+    font-size: 41px;
+    line-height: 44px;
+    letter-spacing: -0.035em;
+    color: #000000;
+
+}
+
+.section-line {
+    width: 20%;
+    height: 8px;
+    background-color: #EF6D1D;
+}
+
+#main .section-body h4 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+#main .section-body p {
+    /* width: 240px; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+}
+
+
+
+#main .section-map {
+    /* width: 240px; */
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+#main .section-map iframe {
+    /* width: 240px; */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+/* @media screen and (max-width:500) {
+    #main .section-map iframe {
+
+        width: "400px";
+        height: "auto";
+
+
+    }
+} 
+*/
+
+#donate .call-action {
+    padding-top: 150px;
+    margin-top: 200px;
+    height: 556px;
+    background: url('./asset/Rectangle.png');
+    background-size: cover;
+    background-color: #123234d3;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+#donate .call-action h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    color: #FFFFFF;
+
+
+}
+
+#donate .call-action .button {
+
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 210px;
+    height: 55px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 14px;
+    background: #EF6D1D;
+    border-radius: 52px;
+}
+
+/* footer */
+footer {
+    background-color: #123234;
+    height: auto;
+    padding-top: 50px;
+}
+
+#footer .footer-body h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+}
+
+#footer .footer-body p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+#footer .footer-body p span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #ffffff7c;
+}
+
+#footer .footer-body .site-links {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    color: #BDBDBD;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+
+
+}
+
+#footer .footer-body .site-links li {
+    margin: 12px 0;
+
+}
+
+#footer .footer-body .social-links {
+    text-decoration: none;
+    list-style-type: none;
+
+    padding: 5px;
+    color: #ffffff;
+
+}
+
+#footer .footer-body .social-links li img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+
+}
+
+#bottom-footer .bottom-footer {
+    background-color: #0B2B2D;
+    height: 63px;
+    padding-top: 30px;
+
+}
+
+#bottom-footer .bottom-footer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: #ffffff;
+
+}
+
+#bottom-footer .bottom-footer p a {
+    text-decoration: underline;
+    color: #ffffff;
+    margin: 0 5px;
+
+}
